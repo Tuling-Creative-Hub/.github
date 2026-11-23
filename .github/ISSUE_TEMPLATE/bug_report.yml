@@ -1,0 +1,36 @@
+﻿name: Bug Report
+description: Report a defect, regression, or unexpected behavior in a module or workflow.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Affected Module / Service
+      description: Example - Admission CRM, SIS, HCM, Payroll, Tally Connector, Gate App
+      placeholder: e.g., Institutional HCM - Biometric Sync
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the exact steps or API payload needed to reproduce the issue.
+      placeholder: |
+        1. Open ...
+        2. Trigger ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs. Actual Behavior
+      placeholder: Describe what should happen versus what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Environment & Diagnostic Notes
+      description: Include environment (local/staging/prod), timestamps, logs, or dry-run output.
