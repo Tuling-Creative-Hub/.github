@@ -1,26 +1,32 @@
 ﻿name: Feature Request
-description: Propose a new capability, workflow rule, integration, or UI enhancement.
+description: Propose a new feature, workflow rule, integration, or UI improvement.
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
   - type: input
     id: module
     attributes:
-      label: Target Module / Domain
-      placeholder: e.g., Admission Management, DPDP Data Governance, Library
+      label: Target Module / Product
+      description: Where should this capability live?
+      placeholder: e.g., Data Governance Dashboard, Admission, LMS, Payroll
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: Problem or Institutional Need
-      description: What operational gap, compliance requirement, or workflow bottleneck does this solve?
+      label: Problem Statement
+      description: What gap, policy requirement, or workflow bottleneck needs to be solved?
     validations:
       required: true
   - type: textarea
-    id: proposal
+    id: solution
     attributes:
-      label: Proposed Behavior
-      description: Describe the expected rules, inputs/outputs, or configuration options.
+      label: Proposed Solution & Rules
+      description: Describe expected behavior, edge cases, permissions, or configuration needs.
     validations:
       required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Mention workarounds or alternative designs considered, if any.

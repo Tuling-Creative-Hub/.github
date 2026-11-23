@@ -1,12 +1,18 @@
 ﻿## Summary
-<!-- Briefly describe what this PR changes and why. -->
+<!-- Describe what this change does and why it is needed. -->
 
-## Type of Change
-- [ ] Bug fix
-- [ ] New feature or module enhancement
-- [ ] Database schema or migration change
-- [ ] Configuration, documentation, or CI
+## Changes Made
+-
+-
 
-## Verification
-- [ ] Tested locally or verified in staging
-- [ ] Checked for unintended side effects on existing workflows or data
+## Impact & Risk Assessment
+- [ ] Affects database schema, migrations, or seed/import scripts
+- [ ] Affects authentication, authorization, permissions, or DPDP/compliance data
+- [ ] Affects external integrations, webhooks, or scheduled/background jobs
+- [ ] Introduces breaking API or configuration changes
+
+## Verification & Testing
+- [ ] Tested locally against expected and edge-case inputs
+- [ ] Verified in staging / dry-run mode (include summary of checks or query/job results)
+- [ ] Confirmed no unintended regressions in adjacent workflows
+- [ ] Updated documentation or configuration examples where applicable

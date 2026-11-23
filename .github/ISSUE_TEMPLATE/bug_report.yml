@@ -1,36 +1,47 @@
 ﻿name: Bug Report
-description: Report a defect, regression, or unexpected behavior in a module or workflow.
+description: Report a defect, regression, or unexpected behavior with clear reproduction details.
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: input
     id: module
     attributes:
-      label: Affected Module / Service
-      description: Example - Admission CRM, SIS, HCM, Payroll, Tally Connector, Gate App
-      placeholder: e.g., Institutional HCM - Biometric Sync
+      label: Module / Service
+      description: Which product, module, or app is affected?
+      placeholder: e.g., Institutional HCM, SIS, Admission, Tally Connector
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Production
+        - Staging
+        - Local / Development
+        - Other
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
       label: Steps to Reproduce
-      description: List the exact steps or API payload needed to reproduce the issue.
+      description: Provide exact steps, inputs, or API/workflow actions needed to reproduce the issue.
       placeholder: |
-        1. Open ...
-        2. Trigger ...
-        3. Observe ...
+        1. Go to ...
+        2. Perform ...
+        3. See error ...
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
       label: Expected vs. Actual Behavior
-      placeholder: Describe what should happen versus what happened.
+      description: State what should happen and what actually happened.
     validations:
       required: true
   - type: textarea
-    id: context
+    id: evidence
     attributes:
-      label: Environment & Diagnostic Notes
-      description: Include environment (local/staging/prod), timestamps, logs, or dry-run output.
+      label: Logs, Errors & Context
+      description: Paste relevant error messages, timestamps, or diagnostic notes (no secrets or PII).

@@ -1,8 +1,11 @@
 ﻿blank_issues_enabled: false
 contact_links:
-  - name: Support & Implementation Desk
+  - name: Technical Support
     url: mailto:support@tulingcreativehub.com
-    about: For client support, deployment issues, and account assistance.
-  - name: Tuling Creative Hub
+    about: Report operational or deployment issues via email.
+  - name: Sales & Inquiries
+    url: mailto:sales@tulingcreativehub.com
+    about: Contact Tuling Creative Hub for demos, licensing, or custom work.
+  - name: Website
     url: https://tulingcreativehub.com
-    about: Product overview and official website.
+    about: Visit the official Tuling Creative Hub website.
